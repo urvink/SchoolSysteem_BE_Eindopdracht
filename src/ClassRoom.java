@@ -6,9 +6,9 @@ public class ClassRoom {
 		private ArrayList<Student> _listOfStudents;
 
 		public ClassRoom(String name, Teacher mentor, ArrayList<Student> listOfStudents) {
-				this._name = name;
-				this._mentor = mentor;
-				this._listOfStudents = listOfStudents;
+			this._name = name;
+			this._mentor = mentor;
+			this._listOfStudents = listOfStudents;
 		}
 
 }
