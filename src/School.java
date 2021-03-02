@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class School {
+public class   School {
 		private ArrayList<Teacher> _listOfTeachers;
 		private ArrayList<Student> _listOfStudents;
 		private String _schoolType;
@@ -8,18 +8,19 @@ public class School {
 		private ArrayList<ClassRoom> _classRoom;
 
 		public School(ArrayList<Teacher> _listOfTeachers, ArrayList<Student> _listOfStudents, String _schoolType, ArrayList<String> _curriculum, ArrayList<ClassRoom> _classRoom) {
-				this._listOfTeachers = _listOfTeachers;
-				this._listOfStudents = _listOfStudents;
-				this._schoolType = _schoolType;
-				this._curriculum = _curriculum;
-				this._classRoom = _classRoom;
+			this._listOfTeachers = _listOfTeachers;
+			this._listOfStudents = _listOfStudents;
+			this._schoolType = _schoolType;
+			this._curriculum = _curriculum;
+			this._classRoom = _classRoom;
 		}
 
-		public static void addStudent(){
-
+		public void addStudent(Student student){
+			get_listOfStudents().add(student);
 		}
 
-		public void addTeacher(){
+		public void addTeacher(Teacher teacher){
+			get_listOfTeachers().add(teacher);
 		}
 
 		public ArrayList<Teacher> get_listOfTeachers() {
