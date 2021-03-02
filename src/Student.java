@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Date;
 
 
 public class Student extends User{
@@ -11,12 +12,12 @@ public class Student extends User{
 		private ArrayList<LocalDate> _datesAbsent;
 
 		//Constructor
-		public Student(String name, LocalDate dateOfBirth, String nationality) {
+		public Student(String name, Date dateOfBirth, String nationality) {
 				super(name, dateOfBirth);
 				this._nationality = nationality;
 		}
 
-		public Student(String name, LocalDate dateOfBirth, String nationality, String profile) {
+		public Student(String name, Date dateOfBirth, String nationality, String profile) {
 				super(name, dateOfBirth);
 				this._nationality = nationality;
 				this._profile = profile;

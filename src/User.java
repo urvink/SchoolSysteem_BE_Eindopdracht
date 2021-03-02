@@ -1,6 +1,6 @@
 
 import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.util.Date;
 
 
 public abstract class User {
@@ -8,13 +8,13 @@ public abstract class User {
 		private LocalDate _dateOfBirth;
 
 		/**
-		 * @param name 
+		 * @param name
 		 * @param dateOfBirth (format: dd/MM/yyyy)
 		 */
-		public User(String name, LocalDate dateOfBirth) {
+		public User(String name, Date dateOfBirth) {
 				this._name = name;
-				DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-				String formattedDOB = dateFormat.format(dateOfBirth);
+//				DateTimeFormatter dateFormat = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+//				String formattedDOB = dateFormat.format(dateOfBirth);
 				//this._dateOfBirth = get_dateOfBirth(dateOfBirth.getYear(),dateOfBirth.getMonth(),dateOfBirth.getDayOfMonth());
 		}
 
