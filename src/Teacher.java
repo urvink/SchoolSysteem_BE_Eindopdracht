@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 
 public class Teacher extends User {
@@ -12,7 +13,7 @@ public class Teacher extends User {
 
 		public Teacher(String name, Date dateOfBirth, ArrayList<String> curriculum, ClassRoom mentor) {
 				super(name, dateOfBirth);
-				this._curriculum = curriculum;
+				this._curriculum=curriculum;
 				this._mentor = mentor;
 		}
 
@@ -27,4 +28,14 @@ public class Teacher extends User {
 		public void set_mentor(ClassRoom _mentor) {
 				this._mentor = _mentor;
 		}
+
+		public static void main(String[] args) {
+				ArrayList<String> java = new ArrayList<String>();
+				java.add("Java");
+
+				Teacher igor = new Teacher("Igor", new Date(1950-03-02), java);
+
+//				System.out.println("Igor: "+igor.get_curriculum());
+		}
 }
+
