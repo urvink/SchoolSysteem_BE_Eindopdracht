@@ -30,12 +30,16 @@ public class Teacher extends User {
 		}
 
 		public static void main(String[] args) {
-				ArrayList<String> java = new ArrayList<String>();
-				java.add("Java");
+				ArrayList<ArrayList<String>> curriculum = new ArrayList<>();
 
-				Teacher igor = new Teacher("Igor", new Date(1950-03-02), java);
+
+				ArrayList<String> Java = new ArrayList<String>();
+				Java.add("Java");
+				curriculum.add(Java);
+
+				//TODO: Figure out curriculum!!
+//				Teacher igor = new Teacher("Igor", new Date(1950-03-02), curriculum);
 
 //				System.out.println("Igor: "+igor.get_curriculum());
 		}
 }
-

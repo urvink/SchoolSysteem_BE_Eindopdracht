@@ -1,18 +1,16 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public abstract class School {
-		private ArrayList<Teacher> _listOfTeachers;
-		private ArrayList<Student> _listOfStudents;
+		private ArrayList<Teacher> _listOfTeachers = new ArrayList<Teacher>();
+		private ArrayList<Student> _listOfStudents = new ArrayList<Student>();
 		private String _schoolType;
 		private ArrayList<String> _curriculum;
 		private ArrayList<ClassRoom> _classRoom;
 
-		public School(ArrayList<Teacher> listOfTeachers, ArrayList<Student> listOfStudents, String schoolType, ArrayList<String> curriculum, ArrayList<ClassRoom> classRoom) {
-			this._listOfTeachers = listOfTeachers;
-			this._listOfStudents = listOfStudents;
+		public School(String schoolType, ArrayList<String> curriculum) {
 			this._schoolType = schoolType;
 			this._curriculum = curriculum;
-			this._classRoom = classRoom;
 		}
 
 		public void addStudent(Student student){
